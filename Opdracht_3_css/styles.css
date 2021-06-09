@@ -1,0 +1,48 @@
+html {
+    font-family: 'Amatic SC', bold;
+    font-size: 36px;
+
+}
+
+body {
+    padding: 0;
+    color: blue;
+}
+
+.black-border {
+    border: 5px solid black;
+    position: relative;
+    padding-left: 10px;
+}
+
+#black-background {
+    background-color: black;
+    color: white;
+}
+
+#down {
+    height: 2000px;
+}
+
+.a {
+    color: white;
+    font-size: 20px;
+}
+
+.a:hover {
+    color: red;
+}
+
+.a:visited {
+    color: purple;
+}
+
+.h1 {
+    font-size: 40px;
+
+}
+
+.p {
+    font-size: 30px;
+
+}
