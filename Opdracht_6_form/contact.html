@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<html>
+    <head>
+        <!-- hier zet je de code in de head tags -->
+        <title> Contact - Form </title>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Return to home?</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <div class="contact-title"><h1>Wil je mij iets vertellen? Dat kan!</h1></div>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>Naam: <input type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                      <label>Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Bericht: <textarea name="message" rows="4" cols="50"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Send</button>
+                    </p>
+                  </form>
+            </section>
+        </main>
+        <footer>
+            <p>KS 2021</p>
+        </footer>
+    </body>
+</html>
