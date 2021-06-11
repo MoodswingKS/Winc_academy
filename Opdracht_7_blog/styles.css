@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&display=swap');
+
+
+html {
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+
+}
+
+body {
+    font-size: 16px;
+}
+
+
+header {
+    border: 5px solid blue;
+    margin: 25px;
+    text-align: center;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+nav {
+    border: 5px solid green;
+    margin: 25px;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+
+}
+
+main {
+    border: 5px solid orange;
+    margin: 25px;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+a {
+    padding-left: 25px;
+
+}
+
+footer {
+    border: 5px solid red;
+    margin: 25px;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+.blog {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+.blogpost {
+    width: 300px;
+    border: 1px solid black;
+    flex-direction: column-reverse;
+    align-content: center
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: aquamarine;
+        color: azure;
+    }
+
+    header {
+
+        background-color: black;
+        border: 5px solid blue;
+        margin: 25px;
+        text-align: center;
+        padding: 25px;
+        max-width: 100vw;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    nav {
+
+        background-color: black;
+        border: 5px solid green;
+        margin: 25px;
+        padding: 25px;
+        max-width: 100vw;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+
+    }
+
+    a {
+        color: white;
+        padding-left: 25px;
+        font-size: 2rem;
+
+    }
+
+    main {
+        background-color: black;
+        border: 5px solid orange;
+        margin: 25px;
+        padding: 25px;
+        max-width: 100vw;
+    }
+
+    footer {
+        background-color: black;
+        border: 5px solid red;
+        margin: 25px;
+        padding: 25px;
+        max-width: 100vw;
+    }
+}
