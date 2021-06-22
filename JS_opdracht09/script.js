@@ -1,13 +1,16 @@
 function add (one, two) {
-    return one+two
+    const total = ((one*one)+(two*two))
+    return total*total;
 }
 
 const addingUp = function (one, two) {
-    return one+two
+    const total = ((one*one)+(two*two))
+    return total*total;
 }
 
 const addUp = (one, two) => {
-    return one+two
+    const total = ((one*one)+(two*two))
+    return total*total;
 }
 
 console.log(add(1,2))
