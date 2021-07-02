@@ -1,7 +1,6 @@
 // Als gebruiker wil ik op een radiobutton kunnen klikken van de kleur van mijn keuze, waardoor ik aan de radiobutton zie wat de huidige kleur is die "actief" is op dit moment.
 // Als gebruiker wil ik in plaats van klikken met mijn muis over de hamburger kunnen hoveren, waardoor het menu verschijnt. Wanneer ik als gebruiker met mijn muis weer weg ga bij de hamburger verdwijnt het menu weer.
 // Als gebruiker wil ik het menu langzaam in beeld zien schuiven en weer uit beeld zien schuiven, in plaats van plotseling verschijnen (doe dit met CSS transitions). (de richting maakt niet uit!)
-// Verander de kleuren door het gebruik van keyboard toetsen (1 voor home, 2 voor rood, 3 voor oranje, etc.) ⇒ ****hier heb je dus een nieuw Event Type nodig...
 
 let burger = document.querySelector('.burger');
 let totalButtons = document.getElementById('button-total');
@@ -17,17 +16,23 @@ for (let item = 0; item < buttonItems.length; item++) {
     })
 }
 
-
-// Numbers need to change color separately from other functions, as not all rules apply
-// document.addEventListener('keydown', function (e) {
-//     chooseKey();
-// })
-
-// const chooseKey = () => {
-//     for (let keys = 1; keys < 6; keys++) {
-        
-//     }
-// }
+document.addEventListener('keydown', function() {
+    let eventKey = event.keyCode;
+    console.log(eventKey);
+    if (eventKey === 49) {
+        backgroundColor.style.backgroundColor = 'white';
+    } else if (eventKey === 50) {
+        backgroundColor.style.backgroundColor = 'blue';
+    } else if (eventKey === 51) {
+        backgroundColor.style.backgroundColor = 'green';
+    } else if (eventKey === 52) {
+        backgroundColor.style.backgroundColor = 'red';
+    } else if (eventKey === 53) {
+        backgroundColor.style.backgroundColor = 'orange';
+    } else if (eventKey === 54) {
+        backgroundColor.style.backgroundColor = 'grey';
+    }
+});
 
 const chooseButton = (item) => {
     let nameDiv = document.createElement('div');
