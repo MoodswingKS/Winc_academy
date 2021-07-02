@@ -1,10 +1,6 @@
-
 // Als gebruiker wil ik op een radiobutton kunnen klikken van de kleur van mijn keuze, waardoor ik aan de radiobutton zie wat de huidige kleur is die "actief" is op dit moment.
-
 // Als gebruiker wil ik in plaats van klikken met mijn muis over de hamburger kunnen hoveren, waardoor het menu verschijnt. Wanneer ik als gebruiker met mijn muis weer weg ga bij de hamburger verdwijnt het menu weer.
-
 // Als gebruiker wil ik het menu langzaam in beeld zien schuiven en weer uit beeld zien schuiven, in plaats van plotseling verschijnen (doe dit met CSS transitions). (de richting maakt niet uit!)
-
 // Verander de kleuren door het gebruik van keyboard toetsen (1 voor home, 2 voor rood, 3 voor oranje, etc.) ⇒ ****hier heb je dus een nieuw Event Type nodig...
 
 let burger = document.querySelector('.burger');
@@ -21,6 +17,8 @@ for (let item = 0; item < buttonItems.length; item++) {
     })
 }
 
+
+// Numbers need to change color separately from other functions, as not all rules apply
 // document.addEventListener('keydown', function (e) {
 //     chooseKey();
 // })
@@ -82,27 +80,3 @@ document.getElementById('menu-animation').addEventListener('click', function (e)
 //         burger.classList.remove('active-menu');
 //     }
 // })
-
-
-
-
-
-
-
-// var nav = document.getElementById('nav');
-// var navlinks = nav.getElementsByTagName('a');
-
-// function toggleNav() {
-//     (nav.classList.contains('active')) ? nav.classList.remove('active') : nav.classList.add('active');
-//   }
-
-// document.getElementById('nav-icon').addEventListener('click', function(e) {
-//     e.preventDefault();
-//     toggleNav();
-// });
-
-// for(var i = 0; i < navlinks.length; i++) {
-//     navlinks[i].addEventListener('click', function() {
-//       toggleNav();
-//   });
-// }
