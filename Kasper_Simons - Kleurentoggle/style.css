@@ -5,9 +5,18 @@
 
 nav {
     margin-top: 20px;
+
 }
 
-.menu-animation img {
+body {
+    height: 100vh;
+}
+
+.burger {
+    visibility: hidden;
+}
+
+#menu-animation img {
     position: relative;
     width: 150px;
     height: 150px;
@@ -17,8 +26,7 @@ nav {
 ul {
     list-style-type: none;
     text-align: center;
-    /* display: flex;
-    flex-direction: row; */
+
 }
 
 ul li {
@@ -32,10 +40,7 @@ ul li {
     padding-right: 10px;
     z-index: 10;
 }
-/* .colormenu-item img {
-        width: 200px;
-        height: auto;
-} */
+
 
 .colormenu-item button {
     border-radius: 200px;
@@ -45,7 +50,7 @@ ul li {
 .colormenu-item span {
     writing-mode: vertical-lr;
     text-orientation: upright;
-    height: 10px;
+    height: 100%;
 }
 
 .colormenu-item:nth-child(1) button {
@@ -71,7 +76,7 @@ ul li {
 }
 
 .colormenu-item:nth-child(6) button {
-    background-color: black;
+    background-color: grey;
     color: white;
 }
 
@@ -85,33 +90,27 @@ ul li {
     height: 140px;
 }
 
-/* .blue {
-    background-color: blue;
-}
 
-.red {
-    background-color: red;
-}
-
-.green {
-    background-color: green;
-}
-
-.orange {
-    background-color: orange;
-}
-
-.black {
-    background-color: black;
-} */
-
-
-
-.menu-animation img:hover {
+#menu-animation img:hover {
     transform: rotate(90deg);
 }
-.menu-animation img {
+#menu-animation img {
     transition: transform 1s;
     position: absolute;
 }
 
+
+.active-menu {
+    visibility: visible;
+    /* padding-top: 0;
+    transition: padding-top 1s; */
+}
+
+.active-menu #menu-animation img {
+    transition: transform 1s;
+}
+
+#colorname {
+    text-align: center;
+    font-size: 50px;
+}

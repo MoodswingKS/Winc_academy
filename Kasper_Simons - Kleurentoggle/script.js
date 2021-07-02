@@ -1,39 +1,108 @@
-// Requirements 
-// Als gebruiker wil ik op een hamburger-icoon kunnen klikken dat uitklapt als ik er op klik.
 
-// Focus je vooral op de JavaScript (dus weinig tijd aan de CSS)
-
-// Als gebruiker wil ik in het uitgeklapte menu een keuze hebben aan kleuren (uitgeschreven in tekst). Elk item in het menu is één kleur.
-// Als gebruiker wil ik op één van de kleuren kunnen klikken.
-// Wanneer ik als gebruiker op de kleur in het menu heb geklikt verandert de achtergrondkleur van de gehele pagina in de aangeklikte kleur.
-// Wanneer ik als gebruiker op de kleur in het menu klik, klapt het menu weer terug in.
-
-// Bonus Requirements 
-// Als gebruiker wil ik niet alleen de kleurennamen lezen, ik wil ook de kleuren kunnen zien in het menu. Elke "rij" in het menu heeft een kleur.
 // Als gebruiker wil ik op een radiobutton kunnen klikken van de kleur van mijn keuze, waardoor ik aan de radiobutton zie wat de huidige kleur is die "actief" is op dit moment.
+
 // Als gebruiker wil ik in plaats van klikken met mijn muis over de hamburger kunnen hoveren, waardoor het menu verschijnt. Wanneer ik als gebruiker met mijn muis weer weg ga bij de hamburger verdwijnt het menu weer.
-// Als gebruiker wil ik de naast de veranderende achtergrondkleur ook de uitgeschreven naam van de achtergrondkleur op de achtergrond zien wanneer ik deze heb aangeklikt.
+
 // Als gebruiker wil ik het menu langzaam in beeld zien schuiven en weer uit beeld zien schuiven, in plaats van plotseling verschijnen (doe dit met CSS transitions). (de richting maakt niet uit!)
+
 // Verander de kleuren door het gebruik van keyboard toetsen (1 voor home, 2 voor rood, 3 voor oranje, etc.) ⇒ ****hier heb je dus een nieuw Event Type nodig...
 
-const backgroundBody = document.querySelector('body');
+let burger = document.querySelector('.burger');
+let totalButtons = document.getElementById('button-total');
+let buttonItems = totalButtons.querySelectorAll('.colormenu-item');
+let backgroundColor = document.querySelector('body');
+let textDiv = false;
 
-// const blue = backgroundBody.classList.add('.blue');
-// const black = backgroundBody.classList.add('.black');
-// const green = backgroundBody.classList.add('.green');
-// const orange = backgroundBody.classList.add('.orange');
-// const black = backgroundBody.classList.add('.black');
+for (let item = 0; item < buttonItems.length; item++) {
+    buttonItems[item].addEventListener('click', function (e) {
+        e.preventDefault();
+        toggleBurger();
+        chooseButton(item);
+    })
+}
 
+// document.addEventListener('keydown', function (e) {
+//     chooseKey();
+// })
 
-// const colorToggle = (backgroundBody) => {
-    
-
+// const chooseKey = () => {
+//     for (let keys = 1; keys < 6; keys++) {
+        
+//     }
 // }
 
+const chooseButton = (item) => {
+    let nameDiv = document.createElement('div');
+    nameDiv.id = 'colorname';
+    
+    if (textDiv) {
+        let oldDiv = document.querySelector('#colorname');
+        backgroundColor.removeChild(oldDiv);
+    }
 
-const nameColor = () => {
-    debugger
-    let btnColor = document.querySelectorAll('body');
-    btnColor.outerHTML = `<div class="blue">BLAUW</div>`;
-    document.body.appendChild(btnColor);
+    if (item === 0) {
+        nameDiv.innerHTML = `<p>WIT</p>`;
+        backgroundColor.style.backgroundColor = 'white';
+    } else if (item === 1) {
+        nameDiv.innerHTML = `<p>BLAUW</p>`;
+        backgroundColor.style.backgroundColor = 'blue';
+    } else if (item === 2) {
+        nameDiv.innerHTML = `<p>GROEN</p>`;
+        backgroundColor.style.backgroundColor = 'green';
+    } else if (item === 3) {
+        nameDiv.innerHTML = `<p>ROOD</p>`;
+        backgroundColor.style.backgroundColor = 'red';
+    } else if (item === 4) {
+        nameDiv.innerHTML = `<p>ORANJE</p>`;
+        backgroundColor.style.backgroundColor = 'orange';
+    } else if (item === 5) {
+        nameDiv.innerHTML = `<p>GRIJS</p>`;
+        backgroundColor.style.backgroundColor = 'grey';
+    }
+    backgroundColor.appendChild(nameDiv);
+    return textDiv = true;
 }
+
+const toggleBurger = () => {
+    burger.classList.toggle('active-menu');
+}
+
+document.getElementById('menu-animation').addEventListener('click', function (e) {
+    e.preventDefault();
+    toggleBurger();
+})
+
+// document.getElementById('menu-animation').addEventListener('mouseenter', function (e) {
+//     if (!burger.classList.contains('active-menu')) {
+//         burger.classList.add('active-menu');
+//     } 
+// })
+// document.getElementById('menu-animation').addEventListener('mouseleave', function (e) {
+//     if (burger.classList.contains('active-menu')) {
+//         burger.classList.remove('active-menu');
+//     }
+// })
+
+
+
+
+
+
+
+// var nav = document.getElementById('nav');
+// var navlinks = nav.getElementsByTagName('a');
+
+// function toggleNav() {
+//     (nav.classList.contains('active')) ? nav.classList.remove('active') : nav.classList.add('active');
+//   }
+
+// document.getElementById('nav-icon').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     toggleNav();
+// });
+
+// for(var i = 0; i < navlinks.length; i++) {
+//     navlinks[i].addEventListener('click', function() {
+//       toggleNav();
+//   });
+// }
