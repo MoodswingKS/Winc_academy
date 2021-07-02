@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+body {
+    height: 100vh;
+}
+
+.burger {
+    visibility: hidden;
+}
+
+#menu-animation img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+.colormenu-item {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
+}
+
+.colormenu-item button {
+    border-radius: 200px;
+    font-size: 15px;
+}
+
+.colormenu-item span {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    height: 100%;
+}
+
+.colormenu-item:nth-child(1) button {
+    background-color: white;
+}
+
+
+.colormenu-item:nth-child(2) button {
+    background-color: blue;
+    color: white;
+}
+
+.colormenu-item:nth-child(3) button {
+    background-color: green;
+}
+
+.colormenu-item:nth-child(4) button {
+    background-color: red;
+}
+
+.colormenu-item:nth-child(5) button {
+    background-color: orange;
+}
+
+.colormenu-item:nth-child(6) button {
+    background-color: grey;
+    color: white;
+}
+
+.colormenu-item button:hover {
+    transform: opacity(50%);
+}
+
+#btn {
+    width: 40px;
+    height: 140px;
+}
+
+#menu-animation img:hover {
+    transform: rotate(90deg);
+}
+
+#menu-animation img {
+    transition: transform 1s;
+    position: absolute;
+}
+
+.active-menu {
+    visibility: visible;
+}
+
+.active-menu #menu-animation img {
+    transition: transform 1s;
+}
+
+#colorname {
+    text-align: center;
+    font-size: 50px;
+}
