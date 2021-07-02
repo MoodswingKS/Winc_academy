@@ -1,0 +1,151 @@
+
+// animation may only happen when hovering over card-grid. 
+.card-grid:hover :nth-child(n + 2) {
+    animation: fade 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+// while hovering card-grid, delay 2 seconds to start 
+// this animation on the first element (button)
+// Directly hovering the child is impossible, as it's state has a 90deg
+// transformation in non-hovered state.
+.card-grid:hover :nth-child(1) {
+    animation: button 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.testimonial {
+    padding: 20px 40px;
+    text-align: center;
+
+    p {
+        text-align: left;
+        line-height: 25px;
+    }
+}
+
+.card-grid {
+    display: grid;
+    position: relative;
+    height: 600px;
+    max-width: 100vw;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 50% 0% 30% 10%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+
+input {
+    text-align: center;
+    color: $white;
+    font-size: 20px;
+}
+
+.button-fade {
+    transform: rotateY(90deg);
+    grid-area: 2 / 2 / 5 / 3;
+    background-color: $purple;
+    max-width: 400px;
+    text-align: center;
+    z-index: 10;
+    border-radius: 20px 20px 20px 20px;
+    border: 5px solid $purple;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+.card {
+    @include shadow();
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: $white;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 400px;
+}
+
+.circle {
+    grid-area: 3 / 2 / 4 / 3;
+    max-width: 400px;
+    text-align: center;
+    z-index: 10;
+
+    .circle-img {
+        border-radius: 200px 200px 200px 200px;
+        border: 5px solid $purple;
+        margin-top: -50px;
+        width: 100px;
+    }
+}
+
+.footer-card {
+    @include shadow();
+    grid-area: 4 / 2 / 5 / 3;
+    max-width: 400px;
+    background-color: $purple;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        color: $white;
+        padding-top: 60px;
+        font-size: 26px;
+    }
+
+    .card,
+    .circle,
+    .footer-card {
+        max-width: 600px;
+    }
+
+    .circle .circle-img {
+        margin-top: -50px;
+        width: 100px;
+    }
+
+    .testimonial {
+        padding: 20px 20px;
+
+        p {
+            line-height: 25px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    p {
+        font-size: 20px;
+    }
+
+    h1 {
+        color: $white;
+        padding-top: 40px;
+        font-size: 34px;
+    }
+
+    .testimonial {
+        padding: 10px 30px;
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    .card,
+    .circle,
+    .footer-card {
+        max-width: 700px;
+    }
+
+}

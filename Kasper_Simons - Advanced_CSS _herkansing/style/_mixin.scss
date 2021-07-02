@@ -1,0 +1,69 @@
+$white: #fff;
+$purple: #686de0;
+
+@keyframes fade {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes button {
+    from {
+        transform: rotateY(90deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@mixin shadow {
+    box-shadow: 5px 5px 10px grey;
+}
+
+@mixin cardgrid {
+    display: grid;
+    min-height: 100vh;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+.c1 {
+    grid-area: c1;
+}
+
+.c2 {
+    grid-area: c2;
+}
+
+.c3 {
+    grid-area: c3;
+}
+
+.c4 {
+    grid-area: c4;
+}
+
+.c5 {
+    grid-area: c5;
+}
+
+.c6 {
+    grid-area: c6;
+}
+
+.c7 {
+    grid-area: c7;
+}
+
+.c8 {
+    grid-area: c8;
+}
+
+.c9 {
+    grid-area: c9;
+}
+}

@@ -1,0 +1,74 @@
+/*   Base html */
+
+html {
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+
+.hover-link a:hover {
+    color: lightblue;
+}
+
+.active-link a:active {
+    color: red;
+    font-style: italic;
+}
+
+.visited-link a:visited {
+    color: yellow;
+}
+
+textarea:focus {
+    color: green;
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    background-color: darkblue;
+}
+
+ul {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+ul:first-child {
+    padding-left: 0;
+}
+
+.currentPage {
+    background-color: green;
+}
+
+ul:last-child input:focus {
+    border: 5px solid aqua;
+}
+
+
+

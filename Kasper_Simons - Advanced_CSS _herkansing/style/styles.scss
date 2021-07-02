@@ -1,0 +1,29 @@
+
+@import './mixin'; // variables, keyframes & mixin
+@import './card';  // card & grids
+@import './socialmedia'; // social media bar
+
+* {
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #c3cfe2;
+}
+
+h1 {
+    color: $white;
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+a:hover {
+    color: $white;
+}
+

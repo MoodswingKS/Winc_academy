@@ -1,0 +1,153 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+hr {
+    padding-top: 50px;
+    filter: opacity(50%);
+}
+
+
+.friendrequest {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 10% 15% 15% 15%;
+    grid-template-rows: 5% 20% 15% 35% 20% 5%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 300px;
+
+}
+
+.profile1 {
+    grid-area: 2 / 2 / 6 / 4;
+    border: 5px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.profile2 {
+    grid-area: 2 / 5 / 6 / 7;
+    border: 5px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.ava1 {
+    grid-area: 2 / 3 / 4 / 4;
+
+}
+
+.ava2 {
+    grid-area: 2 / 6 / 4 / 7;
+}
+
+* img {
+    padding: 10px 15px;
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+}
+
+.name1 {
+    grid-area: 2 / 2 / 3 / 3;
+    padding-left: 15px;
+
+
+}
+
+.name2 {
+    grid-area: 2 / 5 / 3 / 6;
+    padding-left: 15px;
+
+}
+
+.friends1 {
+    grid-area: 3 / 2 / 4 / 3;
+    padding-left: 15px;
+}
+
+.friends1 p,
+.friends2 p {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.friends2 {
+    grid-area: 3 / 5 / 4 / 6;
+    padding-left: 15px;
+}
+
+.message1 {
+    grid-area: 4 / 2 / 5 / 4;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.message2 {
+    grid-area: 4 / 5 / 5 / 7;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.approve1 {
+    grid-area: 5 / 2 / 6 / 3;
+
+}
+
+.approve2 {
+    grid-area: 5 / 5 / 6 / 6;
+}
+
+.decline1 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.decline2 {
+    grid-area: 6 / 7 / 5 / 6;
+}
+
+
+.border-smaller {
+    display: grid;
+    height: 50px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 20% 60% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". border-small ."
+        ". . .";
+}
+
+.border-small {
+    grid-area: border-small;
+}
+
+#green-b {
+    border-radius: 15px; 
+    border: 5px solid lightgreen;
+    color: green;
+    text-align: center;
+
+    
+}
+
+#red-b {
+    border-radius: 15px;
+    border: 5px solid red;
+    color: red;
+    text-align: center;
+    /* line-height: 120px; */
+}
+
+

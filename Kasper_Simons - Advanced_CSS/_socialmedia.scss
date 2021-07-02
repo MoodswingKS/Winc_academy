@@ -1,0 +1,53 @@
+// while hovering widget, transition only the img, 
+// if the class contains the word 'container'
+// thought it was fun to add this
+.socialmedia>* [class*="container"]:hover img {
+    transition: transform .5s ease-in;
+    transform: translateX(-80%);
+}
+
+.socialmedia {
+    width: 100px;
+    z-index: 15;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    @include sociallink();
+
+
+    li {
+        background-color: blanchedalmond;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 10px 0px 0px 10px;
+        position: relative;
+    }
+
+    li:nth-child(1) {
+        background-color: rgb(108, 108, 255);
+    }
+
+    li:nth-child(2) {
+        background-color: lightblue;
+    }
+
+    li:nth-child(3) {
+        background-color: red;
+    }
+
+    li:nth-child(4) {
+        background-color: purple;
+    }
+
+
+    img {
+        width: 50px;
+        top: -50%;
+    }
+}
+
+ul,
+li {
+    list-style-type: none;
+}

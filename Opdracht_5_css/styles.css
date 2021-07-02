@@ -1,0 +1,135 @@
+
+html {
+    font-family: 'Amatic SC', bold;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+header {
+    border: 5px solid blue;
+    margin: 25px;
+    text-align: center;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+nav {
+    border: 5px solid green;
+    margin: 25px;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+
+}
+
+main {
+    border: 5px solid orange;
+    margin: 25px;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+a {
+    padding-left: 25px;
+
+}
+
+footer {
+    border: 5px solid red;
+    margin: 25px;
+    padding: 25px;
+    max-width: 100vw;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: aquamarine;
+        color: azure;
+    }
+
+    header {
+        
+        background-color: black;
+        border: 5px solid blue;
+        margin: 25px;
+        text-align: center;
+        padding: 25px;
+        max-width: 100vw;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 20px;
+    }
+
+    nav {
+        
+        background-color: black;
+        border: 5px solid green;
+        margin: 25px;
+        padding: 25px;
+        max-width: 100vw;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline;
+
+    }
+
+    a {
+        color: white;
+        padding-left: 25px;
+        font-size: 2rem;
+
+    }
+
+    main {
+        background-color: black;
+        border: 5px solid orange;
+        margin: 25px;
+        padding: 25px;
+        max-width: 100vw;
+    }
+
+    footer {
+        background-color: black;
+        border: 5px solid red;
+        margin: 25px;
+        padding: 25px;
+        max-width: 100vw;
+    }
+}
+
+
+

@@ -1,0 +1,10 @@
+$header-bg : #c0eea9;
+$container-bg : #97d279;
+$line-color : #000;
+$padding : 20px;
+
+@mixin section-text {
+  max-width: 700px;
+  text-align: center;
+  padding: $padding;
+}

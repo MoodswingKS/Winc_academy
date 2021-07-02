@@ -1,0 +1,36 @@
+@mixin sociallink {
+    a {
+        padding: 15px;
+        list-style-type: none;
+        position: absolute;
+        z-index: 20;
+    }
+
+    a:not(:hover) {
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes button {
+    from {
+        transform: rotateY(90deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@mixin shadow {
+    box-shadow: 5px 5px 10px grey;
+}
