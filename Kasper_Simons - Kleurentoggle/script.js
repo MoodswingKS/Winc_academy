@@ -1,7 +1,3 @@
-// Als gebruiker wil ik op een radiobutton kunnen klikken van de kleur van mijn keuze, waardoor ik aan de radiobutton zie wat de huidige kleur is die "actief" is op dit moment.
-// Als gebruiker wil ik in plaats van klikken met mijn muis over de hamburger kunnen hoveren, waardoor het menu verschijnt. Wanneer ik als gebruiker met mijn muis weer weg ga bij de hamburger verdwijnt het menu weer.
-// Als gebruiker wil ik het menu langzaam in beeld zien schuiven en weer uit beeld zien schuiven, in plaats van plotseling verschijnen (doe dit met CSS transitions). (de richting maakt niet uit!)
-
 let burger = document.querySelector('.burger');
 let totalButtons = document.getElementById('button-total');
 let buttonItems = totalButtons.querySelectorAll('.colormenu-item');
@@ -18,7 +14,6 @@ for (let item = 0; item < buttonItems.length; item++) {
 
 document.addEventListener('keydown', function() {
     let eventKey = event.keyCode;
-    console.log(eventKey);
     if (eventKey === 49) {
         backgroundColor.style.backgroundColor = 'white';
     } else if (eventKey === 50) {
@@ -74,6 +69,8 @@ document.getElementById('menu-animation').addEventListener('click', function (e)
     e.preventDefault();
     toggleBurger();
 })
+
+// de hover bonusopdracht: maar niet in gebruik want vind dit niet mooi uitzien in combinatie met de al werkende :hover transition. 
 
 // document.getElementById('menu-animation').addEventListener('mouseenter', function (e) {
 //     if (!burger.classList.contains('active-menu')) {

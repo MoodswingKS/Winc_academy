@@ -5,7 +5,6 @@
 
 nav {
     margin-top: 20px;
-
 }
 
 body {
@@ -40,7 +39,6 @@ ul li {
     padding-right: 10px;
     z-index: 10;
 }
-
 
 .colormenu-item button {
     border-radius: 200px;
@@ -84,26 +82,22 @@ ul li {
     transform: opacity(50%);
 }
 
-
 #btn {
     width: 40px;
     height: 140px;
 }
 
-
 #menu-animation img:hover {
     transform: rotate(90deg);
 }
+
 #menu-animation img {
     transition: transform 1s;
     position: absolute;
 }
 
-
 .active-menu {
     visibility: visible;
-    /* padding-top: 0;
-    transition: padding-top 1s; */
 }
 
 .active-menu #menu-animation img {
