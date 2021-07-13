@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    font-family: 'Trade Winds', cursive;
+}
+
+header {
+    padding-top: 10px;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.title h1 {
+    z-index: -20;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title img {
+    height: 120px;
+    
+}
+
+.filters {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.radiobutton {
+    justify-content: left;
+}
+
+nav {
+    line-height: 40px;
+    text-align: center;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+
+#movies-list {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+}
+
+.filmgrid {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+}
+
+.filmgrid img {
+    width: 190px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* just for devtools */
+@media (max-width: 768px) {
+    .title h1 {
+        z-index: -20;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .title img {
+        max-width: 100%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    #movies-list {
+        flex: 1 0 21%;
+        margin: 5px;
+    }
+}

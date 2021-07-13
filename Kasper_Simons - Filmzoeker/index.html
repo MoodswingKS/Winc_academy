@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FILMZOEKER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer type="text/javascript" src="database.js"></script>
+  <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <img src="assets/header.png">
+      <h1>F I L M  ZOEKER</h1>
+    </div>
+  </header>
+
+  <nav>
+    <form>
+      <div class="filters">
+        <div class="radiobutton">
+          <input type="radio" id="release" name="filter" value="release">
+          <label for="release">Newest</label>
+        </div>
+        <div class="radiobutton">
+          <input type="radio" id="avengers" name="filter" value="avengers">
+          <label for="avengers">Avengers</label>
+        </div>
+        <div class="radiobutton">
+          <input type="radio" id="x-men" name="filter" value="x-men">
+          <label for="x-men">X-Men</label>
+        </div>
+        <div class="radiobutton">
+          <input type="radio" id="princess" name="filter" value="princess">
+          <label for="princess">Princess</label>
+        </div>
+        <div class="radiobutton">
+          <input type="radio" id="batman" name="filter" value="batman">
+          <label for="batman">Batman</label>
+        </div>
+      </div>
+    </form>
+  </nav>
+
+  <main class="container">
+    <ul id="movies-list">
+    </ul>
+  </main>
+
+  <footer>
+    <div class="copyright">KASPER SIMONS 2021</div>
+  </footer>
+</body>
+
+</html>
