@@ -1,0 +1,3 @@
+getGenres();
+bestScifi();
+bestDrama();
