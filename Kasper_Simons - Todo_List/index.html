@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>TODO - LIST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer type="text/javascript" src="api-client.js"></script>
+  <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <img src="assets/header.png">
+      <h1>TO-DO LIST</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="todolist">
+      <h3><br>Nieuwe taak:</h3>
+      <div class="add-new-item">
+        <label for="new-item"></label>
+        <input id="new-item" type="text">
+        <button class="save">Toevoegen</button>
+      </div>
+
+      <h3><br>Nog doen:</h3>
+      <ul id="incomplete-list">
+        <li id="" class="incomplete-list-item">
+        </li>
+      </ul>
+
+      <h3><br>Klaar:</h3>
+      <ul id="completed-list">
+        <li class="completed-list-item">
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer>KASPER SIMONS 2021</footer>
+</body>
+
+</html>
